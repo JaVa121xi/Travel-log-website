@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>日志</title>
+		<link rel="shortcut icon" href="img/1.jpg">
+		<link rel="stylesheet" href="css/日志.css">
+	</head>
+	<body>
+		<div class="top">
+					<div>
+						<a href="index.html" target="_self" ><span>首页</span></a>
+					</div>
+					<div>
+						<a href="" target="_self"><span>日志</span></a>
+					</div>
+					<div>
+						<a href="./推荐.html" target="_self"><span>推荐</span></a>
+					</div>
+					<div>
+						<img src="img/userName.jpg" title="userName" width="80px" height="80px">
+					</div>
+					
+		</div>
+		
+		<form action="http://localhost:8081/publishLog" method="post" id="lll">
+			<div style="background-color:#ffffff;height:810px;width:395px;float:left;"></div>
+			<div style="margin-left: -100px; background-color:#EEEEEE;height:810px;width:900px;float:left;">
+				
+			<div style="text-align:center;">
+				
+				<fieldset style="font-family: 楷体; font-size: 25px;color:black;height:800px;width:895px;">
+				<legend>日志发布</legend>
+			用户名称:<input type="text" id="inputFiled" name="inputFiled" size="30"><br><br>
+			日志名称:<input type="text" id="inputLog" name="inputLog" size="30"><br><br>
+			旅游地点:<input type="text" id="inputPosition" name="inputPosition" size="30"><br><br>
+			<label for="cars">请选择你的旅游方式：</label><select name="cars" id="cars">
+			<option value="报名旅游团">报名旅游团</option>
+			<option value="自驾游">自驾游</option>
+			<option value="出国旅游">出国旅游</option>
+			<option value="公司团建">公司团健</option>
+			<option value="研学活动">研学活动</option>
+			</select><br><br>
+			
+			<fieldset style="font-family: 楷体;font-size: 20px;">
+				<legend>日志内容</legend><br>
+				上传图片:<input type="file"><br><br>
+				<p>正文</p>
+				
+			<textarea id="textFiled" name="textFiled" style="height: 250px;width:400px;resize:none;overflow:scroll;">：</textarea><br><br>
+			发布日期:<input type="text" id="data" name="data" size="30"><br><br>
+			</fieldset>
+			
+			<fieldset style="font-family: 楷体;font-size: 20px;">
+				<legend>日志标签</legend>
+			<input type="checkbox" name="vehicle" value="特种兵式速游">特种兵式速游
+			<input type="checkbox" name="vehicle" value="漫游">漫游
+			<input type="checkbox" name="vehicle" value="长途旅游">长途旅游
+			<input type="checkbox" name="vehicle" value="亲自旅游">亲子旅游
+			<input type="checkbox" name="vehicle" value="穷游">穷游
+			<input type="checkbox" name="vehicle" value="其他">其他<br>
+			</fieldset>
+			
+			
+			<input type="submit" value="发布">
+			<input type="submit" value="删除" >
+			<p>     </p>
+			<input type="radio" name="sex" value="点赞">点赞
+			<input type="radio" name="sex" value="踩一下">踩一下
+			    </fieldset>
+			</form>
+			
+			</div>
+			<div id="footer" style=" background-color:#aaffff;width:100%;height:35px;clear:both;text-align:center;">@旅游日志网站</div>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,211 @@
+*{margin: 0px; padding: 0px;}
+/* 顶部布局 */
+
+.top
+{
+	width: 100%;
+	height: 80px;
+	border: 1px solid #acd;
+	background-color:#95D2F8;
+}
+.top div
+{
+	width: 150px;
+	height: 80px;
+	border: 0px solid #acd;
+	float: left;
+	margin-left: 150px;
+}
+.top a
+{
+	text-decoration: none;
+	color: azure;
+	font-size: 20px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 600;
+}
+a:hover
+{
+	font-size: 28px;
+	color: red;
+}
+.top span
+{
+	text-align: center;
+	margin-left: 50px;
+	line-height: 80px;
+}
+
+body,h1,ul,h2,h3,p,figure{
+	margin: 0;/*顶边顶格*/
+	padding: 0;
+}
+div,figure,img,input,button{
+	box-sizing:border-box;
+}
+body{
+	background-color: #eee;
+}
+img{
+	display: block;
+	max-width: 100%;/*最大长度*/
+}
+ul,li{
+	list-style: outside none none;/*去除小黑点*/
+}
+a{
+	text-decoration: none;/*去掉链接下划线*/
+}
+.none{
+	display: none;
+}
+.sm-visible{
+	display: none;
+}
+.clearfix:after{
+	content: ".";
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+#adver .center{
+	width: 40%;
+	height: 60px;
+	background-color: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -10px 0 0 -20%;/*矩形框居中*/
+	opacity: 0.6;
+	border-radius: 10px;/*增加圆角*/
+} 
+#adver .search{
+	width: 70%;
+	height: 52px;
+	background-color: #eee;
+	color: #666;
+	border: 1px solid #666;
+	border-radius: 10px;
+	font-size: 24px;
+	padding: 0 10px;/*内边距*/
+	outline: none;/*去掉外边框*/
+	display: block;
+	float: left;
+}
+#adver .button{
+	width: 30%;
+	height: 54px;
+	background-color: #eee;
+	color: #666;
+	border: 1px solid #333;
+	border-left-width: 3px;/*左边距离*/
+	border-radius: 10px;
+	font-size: 24px;
+	outline: none;
+	cursor: pointer;/*手型*/
+	font-weight: bold;/*字体加粗*/
+	display: block;
+	float:right;
+}
+#tour{
+	max-width: 1263px;
+	height: 1175px;
+	/*background-color: #ddd;*/
+	margin: 30px auto;
+	text-align: center;/*照片居中*/
+}
+#tour figure{
+	border:1px solid #ddd;
+	display:block;/*变成与照片相同宽度的边框*/
+	padding: 4px;
+	border-radius: 4px;
+	margin: 15px 0.4%;
+	width: 32.4%;
+	text-align: left;
+	position: relative;
+	float:left;
+}
+#tour figure img{
+	vertical-align: middle;/*照片与边框大小匹配*/
+}
+#tour figcaption{
+	color: #777;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	font-size: 14px;
+	padding: 7px 0 5px 0;
+}
+#tour .title{
+	color: #333;
+	font-weight: normal;
+}
+#tour .sat{
+	float: right;
+	font-size: 13px;
+	color: #999;
+	font-style: normal;
+	position: relative;
+	top: 5px;
+	right: 5px;
+}
+#tour .type{
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	text-align: center;
+	background-color: #59b200;
+	color: #fff;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+}
+#footer{
+	background-color: #222;
+	clear: both;
+	position: relative;
+	top: 20px;
+}
+#footer .top{
+	max-width: 1263px;
+	height: 270px;
+	margin:0 auto;
+	text-align: center;
+}
+#footer .version{
+	color: #777;
+	text-align: center;
+	padding: 10px 0;
+}
+#footer .block{
+	width: 33.33%;
+	height: 270px;
+	display: inline-block;/*与浮动效果类似*/
+	text-align: left;/*字体居左*/
+	color: #ccc;
+	vertical-align: top;/*垂直居顶*/
+	display: block;
+	float: left;
+}
+#footer h2{
+	font-size: 24px;
+	font-weight: normal;/*字体变细*/
+	padding: 60px 0 0 20px;
+}
+#footer hr{
+	width: 90%;
+	border:1px dashed/*虚线*/ #333;
+}
+#footer ul{
+	font-size: 18px;
+	color: #777;
+	text-indent: 20px;/*首行缩进*/
+}
+#footer .bottom{
+	padding: 15px 0;
+	text-align: center;
+	color: #777;
+	background-color: #000;
+	border-top: 1px solid #444;
+}

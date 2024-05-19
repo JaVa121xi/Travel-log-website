@@ -1,0 +1,68 @@
+*{margin: 0px; padding: 0px;}
+/* 顶部布局 */
+
+.top
+{
+	width: 100%;
+	height: 80px;
+	border: 1px solid #acd;
+	background-color:#95D2F8;
+}
+.top div
+{
+	width: 200px;
+	height: 80px;
+	border: 0px solid #acd;
+	float: left;
+	margin-left: 150px;
+}
+.top a
+{
+	text-decoration: none;
+	color: azure;
+	font-size: 20px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 600;
+}
+.top a:hover
+{
+	font-size: 28px;
+	color: darkorange;
+}
+.top span
+{
+	text-align: center;
+	margin-left: 50px;
+	line-height: 80px;
+	font-size: 28px;
+	font-family: 楷体;
+}
+
+.confirm
+{
+	width: 100%;
+	height: 380px;
+	border: 0px solid red;
+}
+
+.graph
+{
+	width: 100%;
+	height: 380px;
+	border: 0px solid red;
+	float: left;
+	
+	background-image: url(images/index_04.png);
+	animation: 30s graph infinite; 
+	/* 动画 */        
+}
+
+@keyframes graph  /* 关键帧 */
+{
+	0%{background-image: url(https://ts1.cn.mm.bing.net/th/id/R-C.464a34ec24ef3e0bb41415dc0b3a0c3a?rik=dXoX2pLM7ROJXQ&riu=http%3a%2f%2fseopic.699pic.com%2fphoto%2f50067%2f8224.jpg_wh1200.jpg&ehk=%2fMvvMj9%2bgQCrXNAD6VjvFMgP56bzQRS2pTOIEXnab1o%3d&risl=&pid=ImgRaw&r=0);}
+	25%{background-image:url(https://img.tukuppt.com/ad_preview/00/09/09/5c991047deb10.jpg!/fw/980) ;}
+	50%{background-image: url(https://1.s91i.faiusr.com/4/AFsIipO7ARAEGAAg9ZTb-wUo0KW9qgQwwAc4nAQ!800x800.png?_tm=3&v=1610009205984);}
+	75%{background-image: url(https://img.tukuppt.com/ad_preview/00/24/21/5c9a6d354c419.jpg!/fw/980);}
+	100%{background-i mage: url(https://img.tukuppt.com/bg_grid/00/04/92/nx3QVQbsUT.jpg!/fh/350);}
+	
+} 

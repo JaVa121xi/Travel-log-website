@@ -1,0 +1,476 @@
+<!doctype html>
+<html >
+ <head>
+  <meta charset="UTF-8">
+
+  <title>旅游日志</title>
+  <link href="css/index.css" rel="stylesheet"/>
+  
+  <link rel="shortcut icon" href="images/1.jpg">
+  <link rel="stylesheet" href="css/首页.css">
+  <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+	 <div class="top">
+	 					<div>
+	 						<a href="" target="_self" ><span>首页</span></a>
+	 					</div>
+	 					<div>
+	 						<a href="日志.html" target="_self"><span>日志</span></a>
+	 					</div>
+	 					<div>
+	 						<a href="./推荐.html" target="_self"><span>推荐</span></a>
+	 					</div>
+	 					<div>
+	 						<img src="images/userName.jpg" title="userName" width="80px" height="80px">
+	 					</div>
+		</div>
+	 
+	
+	<!-- 广告部分 -->
+	<div id="banner">
+		<div class="banner-bg">
+			<div class="container">
+				<ul class="nav">
+					<li class="hover">
+						<a href="#" >首页</a>
+						<div class="banner-box">
+							<ul>
+								<li class="active">
+									<b class="fly"></b>
+									<a href="#">机票</a>
+									<div id="tab">
+										<!-- 上边tab -->
+										<ul>
+											<li class="selected">国内机票
+												<i></i>
+											</li>
+											<li >国际机票
+												<i></i>
+											</li>
+										</ul>
+										<!-- 内容盒子 -->
+		<form class="banner-fly" action="http://localhost:8081/Search" method="post">
+		<ul>
+		<li>
+			<span>航程类型</span>
+			<input type="radio" name="city" id="single" value="单程">
+			<label for="single">单程</label>
+			<input type="radio" name="city" id="double" value="返程">
+			<label for="double">往返</label>
+		</li>
+		<li>
+			<span>往返城市</span>
+			<input type="text" name="departCity" placeholder="北京" class="text">
+			<img src="images/index_11.png">
+			<input type="text" name="arriveCity" placeholder="上海" class="text">
+		</li>
+		<li class="time">
+			<span>出发时间</span>
+			<input type="text" name="departDate" placeholder="2024-5-1" class="text">
+			<img src="images/index_15.png" class="calendar">
+			<em>返程</em>
+			<input type="text" name="returnDate" placeholder="2024-5-5" class="text">
+			<img src="images/index_15.png" class="calendar2">
+		</li>
+		<li>
+			<button type="submit">
+				<b></b>
+				搜索
+			</button>
+			<div class="clear"></div>
+		</li>
+			</ul> 
+					 </form>
+									</div>
+								</li>
+								<li>
+									<b class="ticket"></b>
+									<a href="#">门票</a>
+								</li>
+								<li>
+									<b class="hotel"></b>
+									<a href="#">酒店</a>
+								</li>
+								<li>
+									<b class="travel"></b>
+									<a href="#">旅游</a>
+								</li>
+								<li>
+									<b class="passport"></b>
+									<a href="#">签证</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">境外旅游</a>
+					</li>
+					<li>
+						<a href="#">国内旅游</a>
+					</li>
+					<li>
+						<a href="#">周边旅游</a>
+					</li>
+				 	<li>
+						<a href="#">机票</a>
+					</li>
+					<li>
+						<a href="#">酒店</a>
+					</li>
+					<li>
+						<a href="#">景点</a>
+					</li>
+					<li>
+						<a href="#">游记攻略</a>
+					</li>
+				</ul>
+				<div class="confirm">
+					<div class="graph"></div>
+					
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	<!-- 主体部分 -->
+	<div id="section">
+		<!-- 热门推荐开始 -->
+		<div class="section_one">
+				<p class="rmtj">热门推荐<img src="images/index_34.png" class="dq">
+				</p>
+				<ul>	
+					<li>
+						<ul>
+							<li>
+								<a href="#>"><img src="images/index_22.png" alt="图片加载失败，请重新加载" title="踏青之旅 旅游购物两不误"></a>
+							</li>
+							<li>
+								<span class="rmtj_left"><a href="#" class="style1">旅行之旅 旅游之购物</a></span><span class="rmtj_right">￥298.00<b>起</b></span>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li>
+								<a href="#>"><img src="images/index_24.png" alt="图片加载失败，请重新加载" title="彼岸TRIP"></a>
+							</li>
+							<li>
+								<span class="rmtj_left"><a href="#" class="style1">旅行之旅 旅游之购物</a></span><span class="rmtj_right">￥298.00<b>起</b></span>
+							</li>
+						</ul>
+					</li>
+					<li class="imga">
+						<ul class="imga">
+							<li>
+								<a href="#>"><img src="images/index_26.jpg" alt="图片加载失败，请重新加载" title="风景名胜"></a>
+							</li>
+							<li>
+								<span class="rmtj_left"><a href="#" class="style1">风景名胜</a></span><span class="rmtj_right">￥168.00<b>起</b></span>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#>"><img src="images/index_29.png" alt="图片加载失败，请重新加载" title="风景名胜"></a>
+							</li>
+							<li>
+								<span class="rmtj_left"><a href="#" class="style1">风景名胜</a></span><span class="rmtj_right">￥168.00<b>起</b></span>
+							</li>
+						</ul>
+					</li>
+					<li></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<!-- 热门推荐开结束 -->
+		<!-- <div class="clear"></div> -->
+		<!-- 周边旅游开始 -->
+		<div class="section_two">
+			<div class="zbly">
+					<!-- 横幅 -->
+					<p class="zbly_font">
+					周边旅游
+					<img src="images/index_34.png" class="dq">
+					</p>
+					<ul class="zbly_nav">
+						<li class="rm"><a href="#" class="rm_a">热门精选</a></li>
+						<li><a href="#">北京</a></li>
+						<li><a href="#">上海</a></li>
+						<li><a href="#">杭州</a></li>
+						<li><a href="#">苏州</a></li>
+						<li><a href="#">南京</a></li>
+						<li><a href="#">深圳</a></li>
+					</ul>
+					<a href="#" class="zbly_more">更多周边游 ></a>
+					<div class="clear"></div>
+			</div>
+			<!-- <div class="clear"></div> -->
+			<ul class="zbly_img">
+				<li class="zbly_wz">
+					<ul>
+						<li class="rmmd"><span>热门目的地</span>
+							<ul class="hot">
+								<li><a href="#">上海</a></li>
+								<li><a href="#">济南</a></li>
+								<li><a href="#">泰安</a></li>
+								<li><a href="#">青岛</a></li>
+								<li><a href="#">枣庄</a></li>
+								<li><a href="#">威海</a></li>
+								<li class="jx"><a href="#" class="jx">嘉兴</a></li>
+								<li><a href="#">聊城</a></li>
+								<li><a href="#">厦门</a></li>
+								<li><a href="#">杭州瘦西湖</a></li>
+							</ul>
+						</li>
+						<li class="tswf"><span>特色玩法</span>
+							<ul class="hot">
+								<li><a href="#">亲子</a></li>
+								<li><a href="#">赏花</a></li>
+								<li><a href="#">巴士游</a></li>
+								<li><a href="#">周边踏青</a></li>
+								<li><a href="#">山水景观</a></li>
+								<li><a href="#">主题乐园</a></li>
+								<li><a href="#">节日出游</a></li>
+								<li><a href="#">古镇村落</a></li>
+								<li><a href="#">金牌产品</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="zbly_tp1">
+					<ul>
+						<li>
+							<a href="#>"><img src="images/index_38.png" alt="图片加载失败，请重新加载" title="Your_  -  _旅行"></a>
+						</li>
+						<li>
+							<span class="rmtj_left"><a href="#" class="style1">Your_  -  _旅行</a></span><span class="rmtj_right">￥298.00<b>起</b></span>
+						</li>
+					</ul>
+				</li>
+				<li class="zbly_tp2">
+					<ul>
+						<li>
+							<a href="#>"><img src="images/index_40.png" alt="图片加载失败，请重新加载" title="夜景"></a>
+						</li>
+						<li class="tq">
+							<span class="rmtj_left"><a href="#" class="style1">旅游-夜景</a></span><span class="rmtj_right">￥168.00<b>起</b></span>
+						</li>
+						<li>
+							<a href="#>"><img src="images/index_45.png" alt="图片加载失败，请重新加载" title="夜景"></a>
+						</li>
+						<li>
+							<span class="rmtj_left"><a href="#" class="style1">旅游-夜景</a></span><span class="rmtj_right">￥168.00<b>起</b></span>
+						</li>
+					</ul>
+				</li>
+				<li class="zbly_tp3">
+					<ul>
+						<li>
+							<a href="#>"><img src="images/index_42.png" alt="图片加载失败，请重新加载" title="夜景"></a>
+						</li>
+						<li class="tq">
+							<span class="rmtj_left"><a href="#" class="style1">旅游-夜景</a></span><span class="rmtj_right">￥168.00<b>起</b></span>
+						</li>
+						<li>
+							<a href="#>"><img src="images/index_46.png" alt="图片加载失败，请重新加载" title="夜景"></a>
+						</li>
+						<li>
+							<span class="rmtj_left"><a href="#" class="style1">旅游-夜景</a></span><span class="rmtj_right">￥168.00<b>起</b></span>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<!-- 周边旅游结束 -->
+		<div class="clear"></div>
+		<!-- 当地游开始 -->
+		<div class="section_three">
+			<div class="ddy">
+					<!-- 横幅 -->
+					<p class="ddy_font">
+					周边旅游
+					<img src="images/index_34.png" class="dq">
+					</p>
+					<a href="#" class="zbly_more">更多景点 ></a>
+			</div>
+			<ul class="local">
+				<li>
+					<a href="#>"><img src="images/index_50.png" alt="图片加载失败，请重新加载" title="风景名胜"></a>
+					<span class="rmtj_left"><a href="#" class="style1">风景名胜</a></span><span class="rmtj_right">￥168.00<b>起</b></span>
+				</li>
+				<li>
+					<a href="#>"><img src="images/index_53.png" alt="图片加载失败，请重新加载" title="风景名胜"></a>
+					<span class="rmtj_left"><a href="#" class="style1">风景名胜</a></span><span class="rmtj_right">￥168.00<b>起</b></span>
+				</li>
+				<li>
+					<a href="#>"><img src="images/index_55.png" alt="图片加载失败，请重新加载" title="风景名胜"></a>
+					<span class="rmtj_left"><a href="#" class="style1">风景名胜</a></span><span class="rmtj_right">￥168.00<b>起</b></span>
+				</li>
+				<li>
+					<a href="#>"><img src="images/index_57.png" alt="图片加载失败，请重新加载" title="风景名胜"></a>
+					<span class="rmtj_left"><a href="#" class="style1">风景名胜</a></span><span class="rmtj_right">￥168.00<b>起</b></span>
+				</li>
+				<li class="none">
+					<a href="#>"><img src="images/index_58.png" alt="图片加载失败，请重新加载" title="风景名胜"></a>
+					<span class="rmtj_left"><a href="#" class="style1">风景名胜</a></span><span class="rmtj_right">￥168.00<b>起</b></span>
+				</li>
+				<li>
+					<a href="#>"><img src="images/index_64.png" alt="图片加载失败，请重新加载" title="成都东软学院"></a>
+					<span class="rmtj_left"><a href="#" class="style1">成都东软学院</a></span><span class="rmtj_right">￥free-_<b>奥</b></span>
+				</li>
+				<li>
+					<a href="#>"><img src="images/index_65.png" alt="图片加载失败，请重新加载" title="成都东软学院"></a>
+					<span class="rmtj_left"><a href="#" class="style1">成都东软学院</a></span><span class="rmtj_right">￥free-_<b>奥</b></span>
+				</li>
+				<li>
+					<a href="#>"><img src="images/index_66.png" alt="图片加载失败，请重新加载" title="成都东软学院"></a>
+					<span class="rmtj_left"><a href="#" class="style1">成都东软学院</a></span><span class="rmtj_right">￥free-_<b>奥</b></span>
+				</li>
+				<li>
+					<a href="#>"><img src="images/index_67.png" alt="图片加载失败，请重新加载" title="成都东软学院"></a>
+					<span class="rmtj_left"><a href="#" class="style1">成都东软学院</a></span><span class="rmtj_right">￥free-_<b>奥</b></span>
+				</li>
+				<li class="none">
+					<a href="#>"><img src="images/index_68.png" alt="图片加载失败，请重新加载" title="成都东软学院"></a>
+					<span class="rmtj_left"><a href="#" class="style1">成都东软学院</a></span><span class="rmtj_right">￥free-_<b>奥</b></span>
+				</li>
+			</ul>
+		</div>
+		<!-- 当地游结束 -->
+		<!-- 旅游攻略开始 -->
+		<div class="section_four">
+			<div class="lygl">
+					<!-- 横幅 -->
+					<p class="lygl_font">
+					旅游攻略
+					<img src="images/index_75.png" class="dq">
+					</p>
+					<a href="#" class="zbly_more">更多攻略 ></a>
+			</div>
+			<div>
+					<ul class="text_1">
+						<li><a href="#">【四川旅游】2024不浪费时间，不错过必玩景点，必看的攻略</a></li>
+						<li><a href="#">【上海旅游】----【热门景点】迪士尼+自然博物馆+南京路+外滩</a></li>
+						<li><a href="#">【台湾旅游】饕餮盛宴在台湾</a></li>
+						<li><a href="#">【东北旅游】----【热门景点】圣索非亚大教堂+长白山天池</a></li>
+						<li><a href="#">【北京旅游】我们的旅行之--天安门广场--故宫--八达岭长城--</a></li>
+					</ul>
+					<ul class="text_2">
+						<li><a href="#">【厦门旅游】2014最新最全最实用厦门旅游攻略 含防骗注意事项</a></li>
+						<li><a href="#">【澳门旅游】港澳双飞四日游——亲身经历——港澳旅游攻略</a></li>
+						<li><a href="#">【香港旅游】香港旅行旅行社，专做国内游，周边游65年</a></li>
+						<li><a href="#">【澳大利亚旅游】澳洲11日(悉尼-墨尔本-凯恩斯)衣食住行攻略</a></li>
+						<li><a href="#">【南京旅游】——总统府——南京博物馆——古鸡鸣寺——</a></li>
+					</ul>
+					<ul class="text_3">
+						<li><a href="#">【西安旅游】西安自由旅行五天攻略来啦</a></li>
+						<li><a href="#">【塞班岛旅游】----【走着走着】之遗落在太平洋的宝石----塞班</a></li>
+						<li><a href="#">【杭州旅游】杭州旅行，告诉你想的景点，你负责玩，我负责带</a></li>
+						<li><a href="#">【苏州旅游】不如咨询当地导游，不担心衣食住行，景区任意搭配</a></li>
+						<li><a href="#">【重庆旅游】重庆游3日攻略，亲身体验的重庆旅游，不走寻常路</a></li>
+					</ul>
+
+			</div>
+		</div>
+		<!-- 旅游攻略结束-->
+		<!-- 商家开始 -->
+		<div class="section_five">
+			<div class="hzsj">
+					<!-- 横幅 -->
+					<p class="hzsj_font">
+					合作商家
+					<img src="images/index_75.png" class="dq">
+					</p>
+					<a href="#" class="zbly_more">更多商家 ></a>
+			</div>
+			<ul>
+				<li><a href="#"><img src="images/index_78.png" alt="图片加载失败" title="商家"></a></li>
+				<li><a href="#"><img src="images/index_80.png" alt="图片加载失败" title="商家"></a></li>
+				<li><a href="#"><img src="images/index_81.png" alt="图片加载失败" title="商家"></a></li>
+				<li><a href="#"><img src="images/index_82.png" alt="图片加载失败" title="商家"></a></li>
+				<li class="none"><a href="#"><img src="images/index_83.png" alt="图片加载失败" title="商家"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 页脚1 -->
+	<div id="footer1">
+			<ul class="list">
+				<li>
+					<ul>
+						<li><h4><a href="#">如何付款和发票</a></h4></li>
+						<li><a href="#">支付宝网银支付</a></li>
+						<li><a href="#">信用卡电话支付</a></li>
+						<li><a href="#">门店支付或银行汇款</a></li>
+						<li><a href="#">货币抵用和发票</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li><h4><a href="#">出境游和港澳游常识</a></h4></li>
+						<li><a href="#">如何办理护照</a></li>
+						<li><a href="#">如何办理旅游签证</a></li>
+						<li><a href="#">如何办理港澳通行证</a></li>
+						<li><a href="#">如何办理台湾旅游通行证</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li><h4><a href="#">预定旅游产品的问题</a></h4></li>
+						<li><a href="#">旅游产品名次解释</li>
+						<li><a href="#">如何看懂旅游产品价格</li>
+						<li><a href="#">如何购买旅游意外保险</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li><h4><a href="#">如何签订旅游合同</a></h4></li>
+						<li><a href="#">传真/邮件签署合同</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li><h4><a href="#">会员注册登陆方式</a></h4></li>
+						<li><a href="#">如何使用游戏币</a></li>
+						<li><a href="#">风有网惠利</a></li>
+						<li><a href="#">会员优惠</a></li>
+					</ul>
+				</li>
+				<li class="list_one">
+					<ul>
+						<li><h4><a href="#">扫描支付宝二维码</a></h4></li>
+						<li><img src="images/index_90.png" alt="二维码加载失败，请重新加载" title="支付宝快来扫我"></li>
+					</ul>
+				</li>
+			</ul>
+	</div>
+	<!-- 页脚2 -->
+	<div id="footer2">
+		<p>Java &copy; www.旅游日志网站.com   Me旅行社有限公司 　川ICP备12345号-1   川ICP证A1-123456   旅游许可证：A-1234567</p>
+		<div>
+			<ul class="gg">
+				<li><a href="#"><img src="images/index_94.png"/></a><p><a href="#">上海市旅游行业协会在线分会</a></p></li>
+				<li><a href="#"><img src="images/index_96.png"/></a><p><a href="#">网站备案</a></p></li>
+				<li><a href="#"><img src="images/index_98.png"/></a><p><a href="#">网络110</a></p></li>
+				<li><a href="#"><img src="images/index_100.png"/></a><p><a href="#">支付宝特约商家</a></p></li>
+				<li><a href="#"><img src="images/index_102.png"/></a><p><a href="#">AAA级信用企业</a></p></li>
+				<li><a href="#"><img src="images/index_104.png"/></a><p><a href="#">上海工商</a></p></li>
+				<li><a href="#"><img src="images/index_107.png"/></a><p><a href="#">可信网站</a></p></li>
+				<li><a href="#"><img src="images/index_109.png"/></a><p><a href="#">诚信认证</a></p></li>
+				 <li><a href="#"><img src="images/index_111.png"/></a><p><a href="#">网络社会征信网</a></p></li>
+				<li><a href="#"><img src="images/index_113.png"/></a><p><a href="#">360网站安全检测</a></p></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="link">
+			<b>友情链接：</b>
+			<p><a href="#">网易旅游</a><a href="#">凤凰网旅游</a><a href="#">中国经济网</a><a href="#">雅虎旅游</a><a href="#">百度旅游</a><a href="#">人民网旅游</a><a href="#">中国制造网</a><a href="#">51766旅游网</a><a href="#">欣欣旅游网</a><a href="#">驴妈妈旅游</a><a href="#">网奇艺旅游</a><a href="#">去哪儿</a><a href="#">拉拉勾旅游</a><a href="#">米胖旅游网</a><a href="#">新华网旅游</a><a href="#">佰程旅行网</a><a href="#">神舟国旅</a><a href="#">新疆旅游</a><a href="#">旅游攻略</a><a href="#">酷讯旅游</a><a href="#">360旅游</a><a href="#">格林豪泰酒店</a><a href="#">wed114结婚网</a><a href="#">新通留学网</a><a href="#">签证资讯网</a>
+			</p>
+		</div>
+	</div>
+	
+ </body>
+</html>
